@@ -9,6 +9,6 @@ Check the commented lines, it is compatible with redemrp.
 
 BIG THNKS to gottfriedleibniz for this DataView in LUA
 
-https://gist.github.com/gottfriedleibniz/8ff6e4f38f97dd43354a60f8494eedff
+https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/dataview_by_Gottfriedleibniz.lua
 
 ## MUST GET THE DATAVIEW IN LUA IN ORDER  TO GET THIS SCRIPT WORK
