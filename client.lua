@@ -185,7 +185,7 @@ end)
 function SellWildHorse()
     if SellWildHorse ~= 0 then
         local PlayerPed = PlayerPedId()
-        if GetMount(PlayerPed == SellWildHorse then
+        if GetMount(PlayerPed) == SellWildHorse then
             Citizen.InvokeNative(0x48E92D3DDE23C23A,PlayerPed,1,0,0,0,0)
             Citizen.Wait(2200)
             DeleteEntity(SellWildHorse)
