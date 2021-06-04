@@ -5,6 +5,7 @@ game "rdr3"
 client_scripts {
 	'config.lua',
 	'client.lua',
+	'not.js'
 }
 
 files { 'not.js'}
