@@ -7,6 +7,8 @@ client_scripts {
 	'client.lua',
 }
 
+files { 'not.js'}
+
 server_scripts {
 	'config.lua',
 	'server.lua',
