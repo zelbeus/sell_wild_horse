@@ -217,7 +217,7 @@ Citizen.CreateThread(function()
 					local is_data_exists = Citizen.InvokeNative(0x57EC5FA4D4D6AFCA,0,i,eventDataStruct:Buffer(),eventDataSize)
 					if is_data_exists then
                         if eventDataStruct:GetInt32(16) == Broken then
-                            if PlayerPedId() == eventDataStruct:SetInt32(0 ,0) then
+                            if PlayerPedId() == eventDataStruct:SetInt32(0) then
                                 SellWildHorse = eventDataStruct:GetInt32(8)
                             end
                         end
