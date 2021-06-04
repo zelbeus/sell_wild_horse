@@ -237,9 +237,9 @@ AddEventHandler('Notification:left', function(t1, t2, dict, txtr, timer)
         end
     end
     if txtr ~= nil then
-        exports.ricx_wild_horse.LeftNot(0, tostring(t1), tostring(t2), tostring(dict), tostring(txtr), tonumber(timer))
+        exports.sell_wild_horse.LeftNot(0, tostring(t1), tostring(t2), tostring(dict), tostring(txtr), tonumber(timer))
     else
         local txtr = "tick"
-        exports.ricx_wild_horse.LeftNot(0, tostring(t1), tostring(t2), tostring(dict), tostring(txtr), tonumber(timer))
+        exports.sell_wild_horse.LeftNot(0, tostring(t1), tostring(t2), tostring(dict), tostring(txtr), tonumber(timer))
     end
 end)
