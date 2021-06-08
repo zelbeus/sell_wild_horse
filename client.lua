@@ -176,13 +176,13 @@ Citizen.CreateThread(function()
             (GetDistanceBetweenCoords(coords.x, coords.y, coords.z, -384.741, 783.828, 114.86, true) < 2.0) or
             (GetDistanceBetweenCoords(coords.x, coords.y, coords.z, 972.665, -1842.48, 45.60, true) < 2.0) then
                 if Citizen.InvokeNative(0x580417101DDB492F, 0, 0xD8F73058) then
-                    SellWildHorse()
+                    SellWildHorseFunction()
                 end
             end
     end
 end)
 
-function SellWildHorse()
+function SellWildHorseFunction()
     if SellWildHorse ~= 0 then
         local PlayerPed = PlayerPedId()
         if GetMount(PlayerPed) == SellWildHorse then
@@ -208,7 +208,7 @@ Citizen.CreateThread(function()
 		if size > 0 then 
 			for i = 0, size - 1 do
 				local eventAtIndex = GetEventAtIndex(0, i)
-                if eventAtIndex == 218595333 then 
+                if eventAtIndex == GetHashKey("EVENT_HORSE_BROKEN") then 
                     local eventDataSize = 3 
 					local eventDataStruct = DataView.ArrayBuffer(24) 
 					eventDataStruct:SetInt32(0 ,0)
