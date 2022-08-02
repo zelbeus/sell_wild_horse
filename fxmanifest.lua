@@ -3,6 +3,7 @@ rdr3_warning 'I acknowledge that this is a prerelease build of RedM, and I am aw
 game "rdr3"
 
 client_scripts {
+	'@dataview_lua/client.lua',
 	'config.lua',
 	'client.lua',
 	'not.js'
