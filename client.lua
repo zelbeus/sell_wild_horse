@@ -28,7 +28,7 @@ Citizen.CreateThread(function()
             (GetDistanceBetweenCoords(coords.x, coords.y, coords.z, -5522.550, -3029.578, -3.215, true) < 2.0) or
             (GetDistanceBetweenCoords(coords.x, coords.y, coords.z, -384.741, 783.828, 114.86, true) < 2.0) or
             (GetDistanceBetweenCoords(coords.x, coords.y, coords.z, 972.665, -1842.48, 45.60, true) < 2.0) then
-                if Citizen.InvokeNative(0x580417101DDB492F, 0, 0xD8F73058) then
+                if Citizen.InvokeNative(0x580417101DDB492F, 0, Config.SellKey) then
                     SellWildHorseFunction()
                 end
             end
