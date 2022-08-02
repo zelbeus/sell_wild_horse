@@ -1,5 +1,7 @@
 Config = {}
 
+Config.SellKey = 0xD8F73058
+
 Config.SellHorse = {
     ["MinPrice"] = 100,
     ["MaxPrice"] = 200,
