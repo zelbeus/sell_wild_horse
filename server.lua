@@ -23,4 +23,5 @@ AddEventHandler("ricx_wildhorse:sold", function()
 		local User = exports['qbr-core']:GetPlayer(_source)
 		User.Functions.AddMoney("cash", am, "desc")
 	end
+	TriggerClientEvent("Notification:left", _source, Config.SellHorse.Messages.Title, Config.SellHorse.Messages.Sold..""..am, 'menu_textures', 'menu_icon_alert', Config.SellHorse.Messages.Duration)
 end)
