@@ -2,6 +2,8 @@ Config = {}
 
 Config.SellKey = 0xD8F73058
 
+Config.Framework = "redemrp" -- "redemrp" or "vorp" or "qbr"
+
 Config.SellHorse = {
     ["MinPrice"] = 100,
     ["MaxPrice"] = 200,
