@@ -44,10 +44,9 @@ function SellWildHorseFunction()
             DeleteEntity(SellWildHorse)
             SellWildHorse= 0
             TriggerServerEvent("ricx_wildhorse:sold")
-	    TriggerEvent("Notification:left", Config.SellHorse.Messages.Title, Config.SellHorse.Messages.Sold..""..r, 'menu_textures', 'menu_icon_alert',  Config.SellHorse.Messages.Duration)		
-          else
-               TriggerEvent("Notification:left", Config.SellHorse.Messages.Title, Config.SellHorse.Messages.NotBroken, 'menu_textures', 'menu_icon_alert',  Config.SellHorse.Messages.Duration)
-           end
+	 else
+            TriggerEvent("Notification:left", Config.SellHorse.Messages.Title, Config.SellHorse.Messages.NotBroken, 'menu_textures', 'menu_icon_alert',  Config.SellHorse.Messages.Duration)
+         end
     else
         TriggerEvent("Notification:left", Config.SellHorse.Messages.Title, Config.SellHorse.Messages.GetHorse, 'menu_textures', 'menu_icon_alert',  Config.SellHorse.Messages.Duration)
     end
