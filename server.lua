@@ -6,7 +6,6 @@ if Config.Framework == "vorp" then
 end
 
 VorpInv = exports.vorp_inventory:vorp_inventoryApi()	
-end
 
 RegisterServerEvent("ricx_wildhorse:sold")
 AddEventHandler("ricx_wildhorse:sold", function()
